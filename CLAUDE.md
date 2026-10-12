@@ -27,7 +27,6 @@ Built with Tauri v2 (Rust backend, TypeScript + Vite frontend, xterm.js for the 
 ### Open items
 
 - Default keyboard shortcuts are proposed in M2 and need the user's confirmation.
-- `architecture.md` says to use conventional commit prefixes (`feat:`, `fix:`, `docs:`). The rules below say to write plain imperative subjects with no prefix. Pick one before the first commit. Until then, follow the rules below.
 
 ## Rules
 
