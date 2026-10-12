@@ -1,5 +1,33 @@
 # CLAUDE.md
 
+## Project: Lantern
+
+Lantern is a custom Windows desktop terminal app. It runs PowerShell inside a custom window with a sidebar that shows files and CPU/RAM stats. It is not a new shell. PowerShell does all the work; we build the window around it.
+
+Built with Tauri v2 (Rust backend, TypeScript + Vite frontend, xterm.js for the terminal).
+
+### Read these first
+
+- `docs/prd.md`: **what** we are building and **why**. Scope, milestones (M0–M7), non-goals.
+- `docs/architecture.md`: **how** it is built. Tech stack, data flow, module layout, Tauri commands and events, settings format.
+- A future `design-system.md` will hold visual styling. It does not exist yet. Do **not** invent a theme.
+
+### Working rules for this project
+
+- Work **one milestone at a time**. Do not build ahead.
+- Do not add features outside the v1 scope in `docs/prd.md` without asking first.
+- Explain each file you create in plain language. This is a learning project.
+- Update `docs/prd.md` or `docs/architecture.md` whenever a decision changes, and add a row to the decisions log in `docs/architecture.md`.
+- Keep the code clean, modular, and readable. Prefer simple over clever.
+- Components in the frontend never call Tauri directly. They go through `src/lib/ipc.ts`.
+- No `unwrap()` on user-influenced data in Rust. Return typed errors.
+- Settings are a JSON file at `%APPDATA%\Lantern\settings.json`. Invalid values fall back to defaults with a warning. The app must never crash on bad settings.
+
+### Open items
+
+- Default keyboard shortcuts are proposed in M2 and need the user's confirmation.
+- `architecture.md` says to use conventional commit prefixes (`feat:`, `fix:`, `docs:`). The rules below say to write plain imperative subjects with no prefix. Pick one before the first commit. Until then, follow the rules below.
+
 ## Rules
 
 - The user is non-technical and should be treated as a 12-year-old. Explain everything in very simple language.
