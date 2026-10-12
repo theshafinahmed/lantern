@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Lantern">
+  <!--
+    Lantern logo mark (concept B). See docs/design-system.md, section 10.
+    Colours are fixed on purpose so the file looks right anywhere:
+      tile fill   #211D19  (bg-raised)
+      tile border #756A5B  (border-strong)
+      chevron     #F5A524  (accent)
+      cursor bar  #F5A524  (accent)
+    Grid is 64 x 64. The tile has a 12-unit corner radius.
+  -->
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#211D19" stroke="#756A5B" stroke-width="1.5"/>
+  <path d="M19 22l13 11-13 11" fill="none" stroke="#F5A524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="35" y="40" width="14" height="5" rx="2.5" fill="#F5A524"/>
+</svg>

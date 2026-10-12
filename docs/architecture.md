@@ -1,6 +1,6 @@
 # Architecture — Lantern
 
-> **Purpose of this file:** Explains *how* the app is built. Read `prd.md` first for *what* and *why*. No visual styling decisions here — those go in `design-system.md` later.
+> **Purpose of this file:** Explains *how* the app is built. Read `prd.md` first for *what* and *why*. No visual styling decisions here — those live in `design-system.md`.
 
 ---
 
@@ -191,3 +191,7 @@ src/
 | 2026-10-12 | Settings via JSON file only (no UI in v1) |
 | 2026-10-12 | Visual design deferred to `design-system.md` |
 | 2026-10-12 | App named **Lantern** |
+| 2026-10-12 | Design system written before M0: warm amber on charcoal, dark only, softly rounded (`design-system.md`) |
+| 2026-10-12 | Fonts: Cascadia Mono for the terminal, Segoe UI Variable for the interface |
+| 2026-10-12 | Logo: concept B (prompt chevron + glowing cursor on a rounded tile), `docs/assets/logo.svg` |
+| 2026-10-12 | xterm.js theme is built only from the terminal tokens in `design-system.md` |
