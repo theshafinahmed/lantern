@@ -1,6 +1,6 @@
 # PRD — Lantern (custom Windows terminal)
 
-> **Purpose of this file:** Tells every Claude Code session *what* we are building and *why*. For *how* it's built, read `architecture.md`. Visual design lives in a future `design-system.md` (not written yet — do **not** invent a theme).
+> **Purpose of this file:** Tells every Claude Code session *what* we are building and *why*. For *how* it's built, read `architecture.md`. Visual design lives in `design-system.md` — take every colour, size and font from there, do **not** invent values.
 
 ---
 
@@ -63,7 +63,7 @@ This is **not** a new shell. PowerShell does all command execution. We build the
 
 - ❌ Linux-to-Windows command translation (dropped)
 - ❌ Writing our own shell
-- ❌ Visual theme / design system (comes later in `design-system.md`)
+- ❌ Light theme or user-selectable themes (v1 is dark only; see `design-system.md`)
 - ❌ Split panes (maybe v2)
 - ❌ Settings UI panel (JSON only for v1)
 - ❌ CMD / Git Bash / WSL profiles (maybe later)
@@ -93,7 +93,8 @@ This is **not** a new shell. PowerShell does all command execution. We build the
 ## 8. Open questions
 
 - Default keyboard shortcuts (propose in M2, confirm with me).
-- Visual design → `design-system.md`.
+- Icon source: Lucide is proposed in `design-system.md`, needs confirming.
+- Tagline: "Warm light for the command line." is a placeholder.
 
 ## 9. Rules for Claude Code sessions
 
