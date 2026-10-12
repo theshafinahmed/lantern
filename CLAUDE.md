@@ -11,6 +11,7 @@ Built with Tauri v2 (Rust backend, TypeScript + Vite frontend, xterm.js for the 
 - `docs/prd.md`: **what** we are building and **why**. Scope, milestones (M0–M7), non-goals.
 - `docs/architecture.md`: **how** it is built. Tech stack, data flow, module layout, Tauri commands and events, settings format.
 - `docs/design-system.md`: **how it looks**. Colours, fonts, spacing, components, logo. Take every colour, size and font from it. Do **not** invent values.
+- `docs/progress.md`: **where we are now**. Current milestone, next action, open items. Read it last, and update it before you finish every session.
 
 ### Working rules for this project
 
