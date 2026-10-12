@@ -10,13 +10,14 @@
 
 **Current milestone:** none started. The project is in the **pre-M0** stage.
 
-**Next action:** work through the pre-M0 checklist below, then show Shafin a short M0 plan and wait for his go-ahead before writing code.
+**Next action:** Shafin installs **Rust** and the **Visual Studio C++ Build Tools** (see below). Then re-run the version checks, then show Shafin a short M0 plan and wait for his go-ahead before writing code.
 
 ### Pre-M0 checklist
 
-- [ ] Check the machine has the tools: Rust (`rustc --version`), Node (`node --version`), and WebView2. Nothing has been checked yet.
-- [ ] Decide the UI framework (Svelte, React, or plain TypeScript). Ask Shafin with a multiple-choice question, then log the decision in `architecture.md`.
-- [ ] Pick a commit style. `architecture.md` says `feat:` / `fix:` prefixes, `CLAUDE.md` says plain imperative with no prefix. Until Shafin picks, follow `CLAUDE.md`.
+- [x] Check the machine for tools (2026-10-12). Found: Node 24.16.0, npm 11.13.0, Git 2.54.0, PowerShell 7.6.6, WebView2 154. **Missing: Rust** (`rustc`, `cargo`, `rustup`) **and the C++ Build Tools** that Rust needs on Windows.
+- [ ] Install Rust (via `rustup`) and the "Desktop development with C++" workload from the Visual Studio Build Tools. Shafin does this himself; Claude must not install software without asking. Then open a **new** terminal and check `rustc --version` and `cargo --version`.
+- [x] UI framework: **Svelte** (2026-10-12).
+- [x] Commit style: plain imperative, no prefix (2026-10-12).
 - [ ] Show the M0 plan and get the go-ahead.
 
 ## 2. Milestones
@@ -42,6 +43,7 @@ Status values: `not started`, `in progress`, `done`, `blocked`. Update the row *
 | 2026-10-12 | PRD and architecture docs written |
 | 2026-10-12 | Design system written: warm amber on charcoal, dark only, softly rounded; logo B chosen (`design-system.md`, `assets/logo.svg`) |
 | 2026-10-12 | Progress tracker added (this file) |
+| 2026-10-12 | Decided: Svelte for the UI, plain imperative commit messages. Machine checked: Rust and C++ Build Tools are missing |
 
 ## 4. Repo state
 
@@ -53,8 +55,7 @@ Status values: `not started`, `in progress`, `done`, `blocked`. Update the row *
 
 | Item | Needed from | Where it matters |
 |---|---|---|
-| UI framework (Svelte / React / plain TS) | Shafin | M0 |
-| Commit style: prefixes or plain imperative | Shafin | First code commit |
+| Install Rust and the C++ Build Tools | Shafin | M0 (blocks it) |
 | Default keyboard shortcuts | Shafin | M2 |
 | Icon source: Lucide is proposed | Shafin | First UI work (M1) |
 | Tagline: "Warm light for the command line." is a placeholder | Shafin | M7 or the README |

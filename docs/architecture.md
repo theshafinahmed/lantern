@@ -37,7 +37,7 @@ The app is **a web page wearing a desktop-app costume**, with **real PowerShell 
 |---|---|---|
 | App shell | **Tauri v2** | Small, fast, low RAM; Rust backend |
 | Frontend | **TypeScript + Vite** | Typed, fast dev server |
-| UI framework | **Decide in M0** (lean: Svelte or React) | Keep it simple; record decision here |
+| UI framework | **Svelte** (with TypeScript + Vite) | Light, little code for tab/sidebar state, official Tauri template |
 | Terminal renderer | **xterm.js** + addons `fit`, `web-links`, `webgl` | Industry standard (VS Code uses it) |
 | PTY | Rust crate **`portable-pty`** | Uses Windows **ConPTY** under the hood |
 | System stats | Rust crate **`sysinfo`** | CPU + RAM |
@@ -177,7 +177,7 @@ src/
 
 - Public GitHub repo. MIT license (confirm before first release).
 - `README.md`: what it is, how to run (`npm install`, `npm run tauri dev`), prerequisites (Rust, Node, WebView2).
-- Small commits per milestone; conventional commit messages (`feat:`, `fix:`, `docs:`).
+- Small commits per milestone; plain imperative commit subjects with no prefix (for example `Add tabs`), one line.
 - Docs (`prd.md`, `architecture.md`) updated whenever a decision changes.
 
 ## 12. Decisions log
@@ -195,3 +195,6 @@ src/
 | 2026-10-12 | Fonts: Cascadia Mono for the terminal, Segoe UI Variable for the interface |
 | 2026-10-12 | Logo: concept B (prompt chevron + glowing cursor on a rounded tile), `docs/assets/logo.svg` |
 | 2026-10-12 | xterm.js theme is built only from the terminal tokens in `design-system.md` |
+| 2026-10-12 | UI framework: **Svelte** (chosen over React and plain TypeScript) |
+| 2026-10-12 | Commit style: plain imperative, no prefix (overrides the earlier `feat:` idea) |
+| 2026-10-12 | The third-party "taste-skill" is not installed in the repo; the global copy is enough |
